@@ -14,22 +14,22 @@ Dette prosjektet dokumenterer praktiske laboratorieøvelser innen Linux-systeman
 
 ---
 
-## Miljø
+## Testmiljø
 
 - **OS:** Ubuntu (VirtualBox)
+- **CPU:** 1 kjerne — Intel Core i7-1355U
 - **Verktøy:** `lscpu`, `netstat`, `htop`, `ab` (ApacheBench), `docker`, `nginx`
-- **Metode:** Manuell testing og analyse med skjermbilder og målinger
 
 ---
 
 ## Nøkkelfunn
 
-| Test | CPU-belastning | Forespørsler per sekund |
-|---|---|---|
-| Nginx uten Docker | ~60% | 1 668 req/s |
-| Nginx med Docker | 85–95% | 4 578 req/s |
+| Test | CPU-belastning | Load average | Lengste responstid |
+|---|---|---|---|
+| Nginx uten Docker | ~52% | 0.95 | 502 ms |
+| Nginx med Docker | ~44% | 3.22 | 847 ms |
 
-Docker håndterte flere forespørsler per sekund, men til en høyere CPU-kostnad. Dette illustrerer avveiningen mellom gjennomstrømning og ressursbruk i containeriserte miljøer.
+Load average er et bedre mål enn CPU-prosent i denne testen. En load average på 3.22 på ett enkelt kjerne betyr at systemet hadde en kø av ventende prosesser — Docker skapte mer totalbelastning selv om CPU-prosenten isolert sett var lavere.
 
 ---
 
