@@ -9,8 +9,8 @@ Dette prosjektet dokumenterer praktiske laboratorieøvelser innen Linux-systeman
 | Fil | Beskrivelse |
 |---|---|
 | `systemanalyse.md` | CPU-kartlegging og nettverksanalyse med Linux-verktøy |
-| `nginx-lasttest.md` | Ytelsestesting av Nginx med ApacheBench og htop |
-| `docker-vs-host.md` | Sammenlignende lasttest – Nginx i Docker vs. Host |
+| `nginx-loadingtest.md` | Ytelsestesting av Nginx med ApacheBench og htop |
+| `docker-vs-vm.md` | Sammenlignende lasttest – Nginx i Docker vs. Host |
 
 ---
 
