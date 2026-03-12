@@ -63,7 +63,7 @@ CPU-belastningen nådde ~52% under lasttesten. Belastningen kom fra to prosesser
 1. **ApacheBench** – genererte høy mengde samtidige forespørsler
 2. **Nginx** – behandlet forespørslene og returnerte svar
 
-Load average på 0.95 viser at systemet håndterte lasten komfortabelt — ingen kø av ventende prosesser. Ingen feil ble registrert, noe som bekrefter at Nginx var stabil gjennom hele testen.
+Load average på 0.95 viser at systemet håndterte lasten komfortabelt. Ingen kø av ventende prosesser. Ingen feil ble registrert, noe som bekrefter at Nginx var stabil gjennom hele testen.
 
 ---
 
