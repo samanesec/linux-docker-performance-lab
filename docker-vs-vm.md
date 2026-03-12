@@ -74,7 +74,7 @@ ab -n 100000 -c 100 http://127.0.0.1/
 CPU-prosenten alene er ikke det beste målet i denne testen. Load average gir et mer fullstendig bilde:
 
 - **VM – load average 0.95:** Systemet håndterte lasten komfortabelt. En verdi under 1.0 på et enkeltkernesystem betyr at det ikke var kø av ventende prosesser.
-- **Docker – load average 3.22:** Systemet var under betydelig press. En verdi på 3.22 på ett enkelt kjerne betyr at det til enhver tid var over tre prosesser i kø — systemet klarte ikke å holde tritt med lasten.
+- **Docker – load average 3.22:** Systemet var under betydelig press. En verdi på 3.22 på ett enkelt kjerne betyr at det til enhver tid var over tre prosesser i kø. Systemet klarte ikke å holde fart med lasten.
 
 Docker skapte altså mer totalbelastning på systemet, selv om CPU-prosenten isolert sett ser lignende ut.
 
