@@ -1,6 +1,6 @@
 # Linux & Docker – Ytelsesanalyse og Nettverksovervåkning
 
-Dette prosjektet dokumenterer praktiske laboratorieøvelser innen Linux-systemanalyse, nettverksovervåkning og ytelsestesting — både på host og i Docker-container. Øvelsene ble gjennomført i et virtualisert Ubuntu-miljø med VirtualBox.
+Dette prosjektet dokumenterer praktiske laboratorieøvelser innen Linux-systemanalyse, nettverksovervåkning og ytelsestesting både på host og i Docker-container. Øvelsene ble gjennomført i et virtualisert Ubuntu-miljø med VirtualBox.
 
 ---
 
@@ -29,7 +29,7 @@ Dette prosjektet dokumenterer praktiske laboratorieøvelser innen Linux-systeman
 | Nginx – Host | ~52% | 0.95 | 502 ms |
 | Nginx – Docker | ~44% | 3.22 | 847 ms |
 
-Load average er et bedre mål enn CPU-prosent i denne testen. En load average på 3.22 på ett enkelt kjerne betyr at systemet hadde en kø av ventende prosesser — Docker skapte mer totalbelastning selv om CPU-prosenten isolert sett var lavere.
+Load average er et bedre mål enn CPU-prosent i denne testen. En load average på 3.22 på ett enkelt kjerne betyr at systemet hadde en kø av ventende prosesser. Docker skapte mer totalbelastning selv om CPU-prosenten isolert sett var lavere.
 
 ---
 
